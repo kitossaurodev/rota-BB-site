@@ -1,9 +1,9 @@
-import express from "express";
-import { submitForm } from "../controllers/formController.js";
-
+const express = require("express");
 const router = express.Router();
+const { submitForm } = require("../controllers/formController");
 
-router.post("/submit", submitForm); // <-- confere aqui
+// Rota para enviar o formulário
+router.post("/submit", submitForm);
 
-export default router;
+module.exports = router;
 
