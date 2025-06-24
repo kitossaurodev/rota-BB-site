@@ -11,6 +11,7 @@ app.use(
   cors({
     origin: [
       "https://blossomboost.com.br",
+      "https://rota-bb-site.onrender.com"
     ],
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
